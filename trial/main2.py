@@ -39,7 +39,7 @@ def draw_numbers():
         y = 0.78 * math.sin(angle)
         glRasterPos2f(x - 0.03, y - 0.03)
         for char in str(i):
-            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, ord(char))
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, ord(char)) # type: ignore
 
 
 def draw_hand(length, angle, width):
